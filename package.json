@@ -12,8 +12,10 @@
   "dependencies": {
     "@capacitor/android": "^1.1.1",
     "@capacitor/core": "1.1.1",
+    "@ionic-native/device": "^5.13.0",
     "@ionic/core": "4.1.1",
     "@ionic/vue": "0.0.1",
+    "cordova-plugin-device": "^2.0.3",
     "vue": "^2.6.6"
   },
   "devDependencies": {

@@ -35,16 +35,28 @@ export default {
     setTimeout(
       () => (
         this.getDataFromAPI()
-        ), 3000)
+        ), 1000);
   },
   methods: {
     async getDataFromAPI() {
       try {
         const req = await fetch('https://jsonplaceholder.typicode.com/todos')
-        this.todos = await req.json()
+        this.todos = await req.json();
+
+        let testText = '';
+
+        if (window.device) {
+          testText = window.device.model + ' ' + window.device.uuid
+        }
+        // TODO document.addEventListener("deviceready", onDeviceReady, false);
+
+        this.todos[0] = {
+          id: 1,
+          title: 'Testing native plugin: ' + testText
+        };
       }
       catch(e) {
-        console.error(`Error: ${e}`)
+        window.console.error(`Error: ${e}`);
       }
     }
   }

@@ -1,4 +1,6 @@
-# vue-ion-skeleton
+# ionic-vue-native-plugins
+
+It's a fork from https://github.com/PaulHalliday/ionic-vue-skeleton-text-example
 
 ## Project setup
 ```
@@ -31,10 +33,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 # Build for device with capacitor
 
 ```
-npm run build
 #npx cap init
 npx cap add android
-npx cap copy android
+npm run build
+npx cap copy
+npx cap sync
 ```
 
 Then open android project from android/ folder in Android Developer Studio
