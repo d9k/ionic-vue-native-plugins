@@ -1,0 +1,7 @@
+{
+  "name": "d9k vue ionic demo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
