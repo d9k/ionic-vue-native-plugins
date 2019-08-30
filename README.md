@@ -27,3 +27,14 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+# Build for device with capacitor
+
+```
+npm run build
+#npx cap init
+npx cap add android
+npx cap copy android
+```
+
+Then open android project from android/ folder in Android Developer Studio
